@@ -1,0 +1,189 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.775]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{L{\"u}wen}{Zhou}
+\title{Resume for Postdoctoral application}                               % optional, remove / comment the line if not wanted
+\address{Institute of mechanics, CAS}{No.15 Beisihuanxi Road, Beijing, China}{100190}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+86~158~0152~9477}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{zhoulvwen@imech.ac.cn}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{lvwenzhou}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+\extrainfo{China Citizen}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2006--2010}{Bachelor in Physics}{College of Physical and Technology, Dalian University}{}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2011--2017}{PhD in Engineering Mechanics}{Institute of mechanics, Chinese Academy of Sciences}{}{}{}
+
+\section{PhD thesis}
+\cvitem{Title}{\emph{Theoretical modeling and numerical analyses of cellular responses to physiological mechanics microenvironment} (In Chinese)}
+\cvitem{Supervisors}{Moubin Liu and Shouqin L{\"u}}
+%\cvitem{Description}{All cells in the body are constantly involved in and modulated by complex biochemical and biomechanical environment. In my thesis, theoretical modeling and numerical analyses are performed to study the passive and active responses of cells under the stimulations of typical chemistry and multiple mechanics. It provides the basis for understanding the mechanism of cell mechano-chemical coupling, and the dynamic response of cells to the specific chemical and mechanical stimulations.}
+
+\section{Experience}
+\subsection{MATLAB and Mathematical Modeling Teaching}
+\cventry{2008-2017}{I have taught courses on MATLAB programming and mathematical models for undergraduates and graduate students many times}{}{}{}{}
+\subsection{Textbook Writing}
+\cventry{2015}{Chapters 2-5 of ``A Guide to Mathematical Modeling Competition for College Students'' (in Chinese)}{Publishing Hose of Electronics Industry, China}{}{}{}
+\subsection{Traffic Simulation (If necessary, I can provide more details and MATLAB codes)}
+\cventry{2009}{Nagel-Schreckenberg Model Simulation of Traffic in The Toll Plaza}{}{}{}{}
+\cventry{2010}{Intelligent Driver Model Simulation of Traffic in The Roundabout}{}{}{}{}
+\cventry{2016}{Intelligent Driver Model Simulation of Traffic in The 3D park}{}{}{}{}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+%\section{Languages}
+%\cvitemwithcomment{Language 1}{Skill level}{Comment}
+%\cvitemwithcomment{Language 2}{Skill level}{Comment}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+\section{Computer skills}
+\cvdoubleitem{Programming}{Matlab, Fortran, Python, C++}{}{}
+%\cvdoubleitem{Typography}{\LaTeX{}, MS Office}{}{}
+\cvdoubleitem{OS}{Linux, Windows}{}{}
+
+\section{Referees}
+\cventry{Moubin Liu}{Ph.D., Professor}{Department of Mechanics and Engineering Science, College of Engineering, Peking University}{No.60 Yannan Yuan, Peking University. Beijing, 100871, China}{Office Tel: +86-10-82529039}{Email: mbliu@pku.edu.cn}
+\cventry{Mian Long}{Ph.D., Professor}{Institute of Mechanics, Chinese Academy of Sciences}{North 4th Ring Road, Beijing, 100871, China}{Office Tel: +86-10-82544131}{Email: mlong@imech.ac.cn}
+
+\newpage
+\section{Selected Awards and Honors}
+\cventry{2006--2009}{Outstanding Student of Dalian University}{}{}{}{}
+\cventry{2007--2009}{Innovation Scholarship of Dalian University}{}{}{}{}
+\cventry{2008}{National Business Plan Competition of Undergraduates}{Second Prize}{}{}{}
+\cventry{2009}{Northeast of China Mathematical Contest in Modeling}{First Prize}{}{}{}
+\cventry{2009}{Dalian Advanced Mathematics Competition of Undergraduates}{First Prize}{}{}{}
+\cventry{2009}{Municipal Government Scholarship}{Frist Class}{}{}{}
+\cventry{2010}{COMAP Mathematical Contest in Modeling}{Meritorious Winner}{}{}{}
+\cventry{2010}{Top Ten Innovative Students of Dalian University}{}{}{}{}
+\cventry{2013, 2016}{Outstanding Student of University of Chinese Academy of Sciences}{}{}{}{}
+
+
+
+%\cventry{hobby 3}{Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\newpage
+\nocite{*}
+\bibliographystyle{ieeetr}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Chalmers University of Technology}{}
+\date{\today}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vitae}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+From website I learned about your need for a postdoctoral fellow in real-world autonomous vehicle behaviour and simulation of Cyber-physical Systems in Chalmers University of Technology. I am very interested in this project, and believe that my background on programming skills and experience in traffic simulation are appropriate for the position. 
+
+I recently will graduate from the University of Chinese Academy of Sciences with a Ph.D in Engineering Mechanics, from where I have studied the passive and active responses of cells under the stimulation of typical chemistry, multiple mechanics by theoretical analyses and numerical simulations. It provides the basis for understanding the mechanism of cell mechano-chemical coupling, and the dynamic response of cells to the specific chemical, mechanical stimulation. My thesis work not only involves mathematical modeling, but also requires a lot of programming.
+
+In addition to my thesis work, I am very interested in mathematical models and computer simulations, especially in relation to traffic. I was so excited when I see vehicles that simulated is moving forward on my computer window. Although I have not received formal training in traffic simulation, the interest prompted me to learn a variety of traffic flow models, such as cellular automata and intelligent driver model. By writing MATLAB programs, I used these models to study several specific problems, such as \textbf{using Nagel-Schreckenberg cellular automata model to determine the optimal number of tollbooths to deploy in a barrier-toll plaza}, and \textbf{using Intelligent Driver Model to determine the optimal parking location in the 3D park}. 
+
+
+Thank you very much for your time and kind consideration. Please contact me if you would like any further information. I look forward to hearing from you.
+
+\vspace{1em}
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.

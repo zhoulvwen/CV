@@ -1,0 +1,163 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.81]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{xeCJK}
+\setCJKmainfont[BoldFont=simhei.ttf]{simsun.ttf}
+\renewcommand{\refname}{发表论文: 已发表7篇(5篇SCI, 其中3篇一作), 另有3篇在投}
+
+% personal data
+\name{周吕文}{}
+\title{个人简历}                               % optional, remove / comment the line if not wanted
+\address{北京市~海淀区~北四环西路15号}{中国科学院力学研究所}{100190}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+86~158~0152~9477}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{zhoulvwen@imech.ac.cn}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{lvwenzhou}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+\extrainfo{中共党员\\男, 汉, 1987年6月生}                % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\vspace{-3em}
+\section{教育背景}
+\cventry{2006--2010}{大连大学}{物理科学与技术学院}{物理学}{本科}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2011--2017}{中国科学院力学研究所}{工程力学}{博士}{}{}
+
+\section{所修主要课程}
+\cventry{本科} {高等数学, 线性代数, 概率论, 理论力学, 热力学统计物理, 电动力学, 量子力学}{}{}{}{}{}
+\cventry{硕博} {
+\href{http://wenku.baidu.com/view/5c87b3ad7c1cfad6195fa7cf.html}{流体力学}, 
+\href{http://wenku.baidu.com/view/2cf3a1ac9e314332396893d8.html}{计算流体力学}, 
+\href{http://wenku.baidu.com/view/2dc9679d89eb172dec63b73b.html}{计算物理}, 
+\href{http://wenku.baidu.com/view/e16f817d0722192e4536f6d6.html}{量纲分析}, 
+\href{http://wenku.baidu.com/view/0651c76bb90d6c85ec3ac69e.html}{摄动理论和渐近分析},
+\href{}{生物物理}
+}{}{}{}{}{}
+
+\section{计算机技术}
+\cventry{操作系统} {Linux, Windows}{}{}{}{}{}
+\cventry{编程语言} {MatLab (精通), Fortran (精通), Python (熟悉), C/C++ (熟悉)}{}{}{}{}{}
+%\cventry{办公软件} {\LaTeX, MS Office, MS Excell, MS PowPoint}{}{}{}{}{}
+\section{经历}
+\subsection{社团经历}
+\cventry{2008--2010}{大连大学数学建模工作室学生负责人}{}{}{}{}
+
+\subsection{科研项目}
+\cventry{2011-2013}{健康/癌变乳腺细胞微流道内迁移动力学模拟}{}{}{}{}
+\cventry{2014-2015}{重力矢量导向作用下动物细胞力学稳定性重建的理论建模}{}{}{}{}
+\cventry{2016-2017}{力学-化学模型构建及其在白细胞极化, 变形与迁移}{}{}{}{}
+\subsection{课程教学}
+\cventry{2008-2017}{MATLAB 编程}{多次开设网络和实体培训课程}{}{}{}
+\cventry{2008-2017}{数学模型和算法}{多次开设网络和实体培训课程}{}{}{}
+%\cventry{2008-2017}{美国大学生数学建模竞赛优秀论文赏析}{多次开设网络和实体培训课程}{}{}{}
+%\subsection{竞赛指导}
+%\cventry{2011-2017}{全国大学生数学建模竞赛}{指导多位学生获得一等奖}{包含一个Matlab创新奖}{}{}
+%\cventry{2011-2017}{美国大学生数学建模竞赛}{指导多位学生获得一等奖}{}{}{}
+\subsection{书籍编写}
+\cventry{2015}{《大学生数学建模竞赛指南》}{电子工业出版社}{参与策划和编写}{并任副主编}{}
+\cventry{2017}{数学模型 (书名正在商定)}{武汉大学出版社}{参与策划和编写}{预计 8 月份出版}{}
+\subsection{其它项目}
+\cventry{2007}{影响大学生就业的主要因素}{从大数据中筛选重要因素建模并给出决策}{个人兴趣研究}{}{}
+\cventry{2008}{Gamma 刀切除脑部肿瘤的最优策略}{基于脑部三维图像的数据给出 Gamma 刀的组合策略}{个人兴趣研究}{}{}
+\cventry{2008}{大学新生学习适应性分析}{通过对问卷数据分析研究新生学习状况}{校级立项课题}{}{}
+\cventry{2009}{高速收费站的交通模拟}{通过计算机模拟确定最优收费亭数量}{个人兴趣研究}{}{}{}
+\cventry{2016}{立体停车场的交通模拟}{通过计算机模拟确定最优停车位置}{大连站北立体停车场项目}{}{}
+
+\newpage
+\section{部分奖励}
+%\cventry{2015} {《大学生数学建模竞赛指南》(电子工业出版社)}{参与策划和编写}{并任副主编}{}{}{}
+\cventry{2011-2016} {中国科学院大学三好学生}{分别于2011-2012, 2012-2013, 2015-2016三次获得}{}{}{}{}
+\cventry{2010} {大连大学十佳创新大学生}{全校每年只评出十名}{}{}{}{}
+\cventry{2010} {美国大学生数学建模大赛}{一等奖}{参赛队队长}{}{}{}
+\cventry{2009} {大连市高等数学竞赛}{一等奖}{}{}{}{}
+\cventry{2008} {``挑战杯''全国大学生创业计划大赛}{省二等奖}{团队负责人}{}{}{}
+%\cventry{2008} {``电工杯''全国大学生数学建模大赛}{全国三等奖}{参赛队队长}{}{}{}
+%\cventry{2009} {东北三省数学建模联赛}{一等奖}{队长}{}{}{}
+\cventry{2008-2009} {大连市政府奖学金}{}{}{}{}{}
+\cventry{2006-2009} {大连大学三好学生奖学金}{连续三年获得}{}{}{}{}
+\cventry{2006-2009} {大连大学创新奖学金}{连续三年获得}{}{}{}{}
+%\cventry{2007-2008} {大连大学创新奖学金}{}{}{}{}{}
+%\cventry{2006-2007} {大连大学三好学生奖学金, 大连大学创新奖学金}{}{}{}{}{}
+%\cventry{2005} {全国中学生奥林匹克物理竞赛}{省级(复试)二等奖}{}{}{}{}
+
+%\cventry{hobby 3}{Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\newpage
+\nocite{*}
+\bibliographystyle{ieeetr}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\end{document}
+
+
+%% end of file `template.tex'.
